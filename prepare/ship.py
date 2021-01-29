@@ -6,12 +6,14 @@ class Ship(Initialize):
     def __init__(self):
         Initialize.__init__(self)
         #获取位置
+
         #self.screen = place.screen
         #self.screen_rect = place.screen.get_rect()
         self.right = False
         self.left = False
         self.screen_rect = self.screen.get_rect()
         #加载图像 获取外接矩形
+        
         self.picture = pygame.image.load('C:\\Users\\steven\\workspace\\alien\\picture\\飞船.png')
         self.rect = self.picture.get_rect()
         #生成位置

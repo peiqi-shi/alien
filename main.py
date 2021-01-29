@@ -1,12 +1,8 @@
 import pygame
-from prepare.alien_first import AlienStart
+from prepare.alien import Alien
 
 if __name__ == '__main__':
-    hai = AlienStart()
+    hai = Alien()
     hai.explain()
     pygame.mouse.set_visible(False)
-    while True:
-        
-        hai.check()
-        hai.check_key()
-        hai.update()
+    hai.run_game()
